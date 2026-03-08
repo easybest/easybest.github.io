@@ -1,5 +1,5 @@
 name: 肖航课题组  Xiao Research Group
-url: https://xiaohang007.github.io/
+url: https://easybest.github.io/
 
 exclude: [bibble, README.md, Makefile, screenshot.png]
 
@@ -39,4 +39,6 @@ navigation:
   - title: 科研 Research
     link: /research.html
   - title: 论文 Publications
+    link: /publications.html
+  - title: 我的大模型
     link: /publications.html
