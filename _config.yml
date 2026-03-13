@@ -40,5 +40,5 @@ navigation:
     link: /research.html
   - title: 论文 Publications
     link: /publications.html
-  - title: 我的大模型
-    link: /publications.html
+  - title: 我的Hugging Face Space
+    link: https://huggingface.co/spaces/songjarvis/cdt501
