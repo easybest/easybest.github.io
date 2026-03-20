@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e3a5f"/>
+    </linearGradient>
+    <linearGradient id="accent1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#38bdf8"/>
+      <stop offset="100%" style="stop-color:#818cf8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bg1)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.06" stroke="#38bdf8" stroke-width="1">
+    <line x1="0" y1="50" x2="1200" y2="50"/><line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="150" x2="1200" y2="150"/><line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="250" x2="1200" y2="250"/><line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="350" x2="1200" y2="350"/>
+    <line x1="100" y1="0" x2="100" y2="400"/><line x1="200" y1="0" x2="200" y2="400"/>
+    <line x1="300" y1="0" x2="300" y2="400"/><line x1="400" y1="0" x2="400" y2="400"/>
+    <line x1="500" y1="0" x2="500" y2="400"/><line x1="600" y1="0" x2="600" y2="400"/>
+    <line x1="700" y1="0" x2="700" y2="400"/><line x1="800" y1="0" x2="800" y2="400"/>
+    <line x1="900" y1="0" x2="900" y2="400"/><line x1="1000" y1="0" x2="1000" y2="400"/>
+    <line x1="1100" y1="0" x2="1100" y2="400"/>
+  </g>
+
+  <!-- Code block decoration (right side) -->
+  <g transform="translate(780, 80)" opacity="0.25">
+    <rect x="0" y="0" width="360" height="240" rx="12" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <circle cx="24" cy="20" r="6" fill="#ef4444"/>
+    <circle cx="44" cy="20" r="6" fill="#eab308"/>
+    <circle cx="64" cy="20" r="6" fill="#22c55e"/>
+    <line x1="0" y1="36" x2="360" y2="36" stroke="#334155" stroke-width="1"/>
+    <text x="20" y="62" font-family="monospace" font-size="14" fill="#38bdf8">def</text>
+    <text x="52" y="62" font-family="monospace" font-size="14" fill="#c4b5fd">hello_world</text>
+    <text x="160" y="62" font-family="monospace" font-size="14" fill="#94a3b8">():</text>
+    <text x="40" y="86" font-family="monospace" font-size="14" fill="#fb923c">print</text>
+    <text x="80" y="86" font-family="monospace" font-size="14" fill="#86efac">("Hello, World!")</text>
+    <text x="20" y="118" font-family="monospace" font-size="14" fill="#38bdf8">for</text>
+    <text x="48" y="118" font-family="monospace" font-size="14" fill="#94a3b8">i</text>
+    <text x="60" y="118" font-family="monospace" font-size="14" fill="#38bdf8">in</text>
+    <text x="82" y="118" font-family="monospace" font-size="14" fill="#fb923c">range</text>
+    <text x="124" y="118" font-family="monospace" font-size="14" fill="#94a3b8">(10):</text>
+    <text x="40" y="142" font-family="monospace" font-size="14" fill="#fb923c">print</text>
+    <text x="80" y="142" font-family="monospace" font-size="14" fill="#94a3b8">(i * </text>
+    <text x="110" y="142" font-family="monospace" font-size="14" fill="#c4b5fd">2</text>
+    <text x="120" y="142" font-family="monospace" font-size="14" fill="#94a3b8">)</text>
+    <rect x="20" y="164" width="8" height="16" fill="#38bdf8" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="1.2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Main text -->
+  <text x="80" y="150" font-family="'Inter','Helvetica Neue',Arial,sans-serif"
+        font-size="56" font-weight="800" fill="white" letter-spacing="-1">
+    Welcome
+  </text>
+
+  <!-- Course title -->
+  <text x="80" y="220" font-family="'Inter','Helvetica Neue',Arial,sans-serif"
+        font-size="30" font-weight="600" fill="url(#accent1)" letter-spacing="0.5">
+    Computer Systems and
+  </text>
+  <text x="80" y="260" font-family="'Inter','Helvetica Neue',Arial,sans-serif"
+        font-size="30" font-weight="600" fill="url(#accent1)" letter-spacing="0.5">
+    Programming Basics
+  </text>
+
+  <!-- Decorative line -->
+  <rect x="80" y="280" width="60" height="3" rx="1.5" fill="#38bdf8" opacity="0.6"/>
+
+  <!-- Subtitle -->
+  <text x="80" y="310" font-family="'Inter','Helvetica Neue',Arial,sans-serif"
+        font-size="16" font-weight="400" fill="#94a3b8" letter-spacing="1">
+    Start your coding journey from here
+  </text>
+</svg>

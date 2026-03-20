@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c1a0c"/>
+      <stop offset="100%" style="stop-color:#14532d"/>
+    </linearGradient>
+    <linearGradient id="accent3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4ade80"/>
+      <stop offset="100%" style="stop-color:#38bdf8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bg3)"/>
+
+  <!-- Data visualization dots (background) -->
+  <g opacity="0.08">
+    <circle cx="850" cy="80" r="60" fill="#4ade80"/><circle cx="950" cy="120" r="40" fill="#38bdf8"/>
+    <circle cx="1050" cy="70" r="30" fill="#4ade80"/><circle cx="900" cy="200" r="50" fill="#38bdf8"/>
+    <circle cx="1000" cy="250" r="70" fill="#4ade80"/><circle cx="1100" cy="180" r="35" fill="#38bdf8"/>
+    <circle cx="800" cy="300" r="45" fill="#4ade80"/><circle cx="1080" cy="320" r="55" fill="#38bdf8"/>
+  </g>
+
+  <!-- Bar chart decoration (right side) -->
+  <g transform="translate(780, 90)" opacity="0.3">
+    <!-- Axes -->
+    <line x1="40" y1="20" x2="40" y2="220" stroke="#4ade80" stroke-width="2"/>
+    <line x1="40" y1="220" x2="360" y2="220" stroke="#4ade80" stroke-width="2"/>
+
+    <!-- Bars -->
+    <rect x="65" y="140" width="35" height="80" rx="4" fill="#4ade80" opacity="0.6"/>
+    <rect x="115" y="100" width="35" height="120" rx="4" fill="#38bdf8" opacity="0.6"/>
+    <rect x="165" y="70" width="35" height="150" rx="4" fill="#4ade80" opacity="0.6"/>
+    <rect x="215" y="50" width="35" height="170" rx="4" fill="#38bdf8" opacity="0.6"/>
+    <rect x="265" y="30" width="35" height="190" rx="4" fill="#4ade80" opacity="0.8"/>
+
+    <!-- Trend line -->
+    <polyline points="82,135 132,95 182,65 232,45 282,25"
+              fill="none" stroke="#fbbf24" stroke-width="2.5" stroke-dasharray="6,3" opacity="0.7"/>
+    <circle cx="282" cy="25" r="4" fill="#fbbf24" opacity="0.9"/>
+
+    <!-- Labels -->
+    <text x="82" y="240" font-family="monospace" font-size="10" fill="#4ade80" text-anchor="middle">W1</text>
+    <text x="132" y="240" font-family="monospace" font-size="10" fill="#4ade80" text-anchor="middle">W2</text>
+    <text x="182" y="240" font-family="monospace" font-size="10" fill="#4ade80" text-anchor="middle">W3</text>
+    <text x="232" y="240" font-family="monospace" font-size="10" fill="#4ade80" text-anchor="middle">W4</text>
+    <text x="282" y="240" font-family="monospace" font-size="10" fill="#4ade80" text-anchor="middle">W5</text>
+  </g>
+
+  <!-- Main text -->
+  <text x="80" y="155" font-family="'Inter','Helvetica Neue',Arial,sans-serif"
+        font-size="52" font-weight="800" fill="white" letter-spacing="-1">
+    Build Your
+  </text>
+  <text x="80" y="222" font-family="'Inter','Helvetica Neue',Arial,sans-serif"
+        font-size="52" font-weight="800" fill="url(#accent3)" letter-spacing="-1">
+    Future
+  </text>
+
+  <!-- Subtitle -->
+  <text x="80" y="270" font-family="'Inter','Helvetica Neue',Arial,sans-serif"
+        font-size="18" font-weight="400" fill="#86efac" letter-spacing="1">
+    From variables to real-world applications
+  </text>
+
+  <!-- Progress indicators -->
+  <g transform="translate(80, 296)">
+    <rect x="0" y="4" width="200" height="6" rx="3" fill="#1e3a2a"/>
+    <rect x="0" y="4" width="150" height="6" rx="3" fill="url(#accent3)"/>
+    <text x="210" y="13" font-family="'Inter',sans-serif" font-size="12" fill="#4ade80">75% Complete</text>
+  </g>
+</svg>

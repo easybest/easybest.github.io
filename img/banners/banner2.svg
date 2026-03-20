@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1033"/>
+      <stop offset="100%" style="stop-color:#2d1b69"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#a78bfa"/>
+      <stop offset="100%" style="stop-color:#f472b6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bg2)"/>
+
+  <!-- Abstract circuit lines -->
+  <g opacity="0.08" stroke="#a78bfa" stroke-width="2" fill="none">
+    <path d="M0,200 H200 L250,150 H400 L450,200 H600"/>
+    <path d="M600,200 L650,250 H800 L850,200 H1000 L1050,150 H1200"/>
+    <path d="M0,300 H150 L200,250 H350 L400,300 H550 L600,250 H750"/>
+    <path d="M0,100 H100 L150,150 H300 L350,100 H500"/>
+    <circle cx="200" cy="200" r="5" fill="#a78bfa"/>
+    <circle cx="450" cy="200" r="5" fill="#a78bfa"/>
+    <circle cx="650" cy="250" r="5" fill="#a78bfa"/>
+    <circle cx="850" cy="200" r="5" fill="#a78bfa"/>
+    <circle cx="150" cy="150" r="5" fill="#a78bfa"/>
+  </g>
+
+  <!-- Flowchart decoration (right side) -->
+  <g transform="translate(750, 60)" opacity="0.3">
+    <!-- Start node -->
+    <rect x="80" y="0" width="120" height="40" rx="20" fill="none" stroke="#a78bfa" stroke-width="2"/>
+    <text x="140" y="25" font-family="monospace" font-size="13" fill="#a78bfa" text-anchor="middle">START</text>
+    <line x1="140" y1="40" x2="140" y2="65" stroke="#a78bfa" stroke-width="2"/>
+
+    <!-- Decision diamond -->
+    <polygon points="140,65 200,110 140,155 80,110" fill="none" stroke="#f472b6" stroke-width="2"/>
+    <text x="140" y="115" font-family="monospace" font-size="11" fill="#f472b6" text-anchor="middle">x > 0 ?</text>
+
+    <!-- Yes branch -->
+    <line x1="200" y1="110" x2="260" y2="110" stroke="#a78bfa" stroke-width="2"/>
+    <text x="225" y="103" font-family="monospace" font-size="10" fill="#22c55e">Yes</text>
+    <rect x="260" y="90" width="110" height="40" rx="6" fill="none" stroke="#a78bfa" stroke-width="2"/>
+    <text x="315" y="115" font-family="monospace" font-size="12" fill="#a78bfa" text-anchor="middle">print(x)</text>
+
+    <!-- No branch -->
+    <line x1="140" y1="155" x2="140" y2="185" stroke="#a78bfa" stroke-width="2"/>
+    <text x="150" y="175" font-family="monospace" font-size="10" fill="#ef4444">No</text>
+    <rect x="80" y="185" width="120" height="40" rx="6" fill="none" stroke="#a78bfa" stroke-width="2"/>
+    <text x="140" y="210" font-family="monospace" font-size="12" fill="#a78bfa" text-anchor="middle">x = -x</text>
+
+    <!-- Loop back arrow -->
+    <line x1="80" y1="205" x2="50" y2="205" stroke="#a78bfa" stroke-width="2"/>
+    <line x1="50" y1="205" x2="50" y2="110" stroke="#a78bfa" stroke-width="2"/>
+    <line x1="50" y1="110" x2="80" y2="110" stroke="#a78bfa" stroke-width="2"/>
+    <polygon points="80,110 70,105 70,115" fill="#a78bfa"/>
+  </g>
+
+  <!-- Main text -->
+  <text x="80" y="155" font-family="'Inter','Helvetica Neue',Arial,sans-serif"
+        font-size="52" font-weight="800" fill="white" letter-spacing="-1">
+    Think Like a
+  </text>
+  <text x="80" y="222" font-family="'Inter','Helvetica Neue',Arial,sans-serif"
+        font-size="52" font-weight="800" fill="url(#accent2)" letter-spacing="-1">
+    Programmer
+  </text>
+
+  <!-- Subtitle -->
+  <text x="80" y="270" font-family="'Inter','Helvetica Neue',Arial,sans-serif"
+        font-size="18" font-weight="400" fill="#c4b5fd" letter-spacing="1">
+    Logic, algorithms, and problem solving
+  </text>
+
+  <!-- Tags -->
+  <g transform="translate(80, 296)">
+    <rect x="0" y="0" width="80" height="28" rx="14" fill="#a78bfa" opacity="0.15"/>
+    <text x="40" y="19" font-family="'Inter',sans-serif" font-size="12" fill="#c4b5fd" text-anchor="middle">Python</text>
+    <rect x="92" y="0" width="60" height="28" rx="14" fill="#f472b6" opacity="0.15"/>
+    <text x="122" y="19" font-family="'Inter',sans-serif" font-size="12" fill="#f9a8d4" text-anchor="middle">Logic</text>
+    <rect x="164" y="0" width="100" height="28" rx="14" fill="#a78bfa" opacity="0.15"/>
+    <text x="214" y="19" font-family="'Inter',sans-serif" font-size="12" fill="#c4b5fd" text-anchor="middle">Algorithms</text>
+  </g>
+</svg>
